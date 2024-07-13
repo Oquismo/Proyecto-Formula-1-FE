@@ -1,0 +1,157 @@
+
+<!doctype html>
+<html lang="es">
+<head> 
+<title>Página principal</title>
+<meta charset="UTF-8">
+<meta name="author" content="STEFANO">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="./css/style2.css">
+<script src='./script/script.js' defer></script>
+</head>
+<body>
+<header>
+    <div class="header">
+    <img src="./img/logo hd.png" class="logo" alt="f1 logo">
+<ul class="lista">
+    <li class="elemento__lista">Contacto</li>
+    <li class="elemento__lista">Horarios</li>
+    <a href='./merchan.html'><li class="elemento__lista">Merchandaisin</li></a>
+    <form action="0" method="get" class="elemento__lista">
+        <input type="text" name="nombre" id="nom" class="header_input" placeholder="Buscar">
+        <button type="submit" value="buscar" class="header_submit"> <i class="fa-solid fa-magnifying-glass"></i></button>
+    </form>
+</ul>
+</div>
+</header>
+<div class="contenedor">
+<div class="card">
+    <img src="./img/mediano.jpeg"  alt="f1" class="card_imagen">
+    <h3>Ulima Hora</h3> 
+    <!-- voy por aqui borrar una vez acabado -->
+    <p id="inicio__texto">Aston martin prepara mejoras para Hungria,
+        <span id="puntos">...</span><span id="mas"> el equipo de Silverstone trabaja a contrareloj para mejorar un coche que a dia de hoy resta mucho de lo que fue el año pasado. <br> En sus declaraciones el piloto esturiano ha anunciado que 
+        se encuentra muy motivado y que van en buena dirección</span></p>
+        <button onclick="readMore()" id="botoncito" class="botonleerMas">Leer más</button>
+        <nav style="--count: 4;">
+          <ul>
+            <li style="--index: 1;">
+              <a class="botoncito__colorado" href="#" target="_blank" rel="noreferrer noopener">
+                <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
+      </svg>
+      Redes</span>
+              </a class="botoncito__colorado">
+            </li>
+            <li style="--index: 2;">
+              <a class="botoncito__colorado" href="https://twitter.com/" target="_blank" rel="noreferrer noopener">
+                <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg>                  
+                    Twitter
+                </span>
+              </a>
+            </li>
+            <li style="--index: 3;">
+              <a class="botoncito__colorado"href="https://www.linkedin.com/in/srovettaterr%C3%B3n/" target="_blank" rel="noreferrer noopener">
+                <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+                    Linkedln
+                </span>
+              </a>
+            </li>
+            <li style="--index: 4;">
+              <a class="botoncito__colorado" href="#" target="_blank" rel="noreferrer noopener">
+                <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M579.8 267.7c56.5-56.5 56.5-148 0-204.5c-50-50-128.8-56.5-186.3-15.4l-1.6 1.1c-14.4 10.3-17.7 30.3-7.4 44.6s30.3 17.7 44.6 7.4l1.6-1.1c32.1-22.9 76-19.3 103.8 8.6c31.5 31.5 31.5 82.5 0 114L422.3 334.8c-31.5 31.5-82.5 31.5-114 0c-27.9-27.9-31.5-71.8-8.6-103.8l1.1-1.6c10.3-14.4 6.9-34.4-7.4-44.6s-34.4-6.9-44.6 7.4l-1.1 1.6C206.5 251.2 213 330 263 380c56.5 56.5 148 56.5 204.5 0L579.8 267.7zM60.2 244.3c-56.5 56.5-56.5 148 0 204.5c50 50 128.8 56.5 186.3 15.4l1.6-1.1c14.4-10.3 17.7-30.3 7.4-44.6s-30.3-17.7-44.6-7.4l-1.6 1.1c-32.1 22.9-76 19.3-103.8-8.6C74 372 74 321 105.5 289.5L217.7 177.2c31.5-31.5 82.5-31.5 114 0c27.9 27.9 31.5 71.8 8.6 103.9l-1.1 1.6c-10.3 14.4-6.9 34.4 7.4 44.6s34.4 6.9 44.6-7.4l1.1-1.6C433.5 260.8 427 182 377 132c-56.5-56.5-148-56.5-204.5 0L60.2 244.3z"/></svg>
+                    Horarios
+                </span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </main>
+</div> 
+<div class="card2">
+    <img src="./img/horarios.jpeg"  alt="f1" class="card_imagen">
+    <h3>Calendario</h3>
+    <p id="inicio__texto2">Explora las proximas carreras<br>
+        <span id="puntos2">...</span><span id="mas2"><br>16/03/24 Monza (Italia)
+          <br>26/03/24 Montmelo (Barcelona)
+          <br>05/04/24 Baku (Hungria)
+          <br>16/04/24 Spa (Belgica)
+          <br>28/04/24 Interlagos (Brasil)
+          <br>7/05/24 MonteCarlo (Monaco)
+        </span></p>
+        <button onclick="readMore2()" id="botoncito2" class="botonleerMas2">Leer más</button>
+    <main>  
+        <nav style="--count: 4;">
+          <ul>
+            <li style="--index: 1;">
+              <a class="botoncito__colorado" href="#" target="_blank" rel="noreferrer noopener">
+                <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"> 
+                    <!-- retocar -->
+        <path stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
+      </svg>
+      Redes</span>
+              </a>
+            </li>
+            <li style="--index: 2;">
+              <a class="botoncito__colorado" href="https://twitter.com/" target="_blank" rel="noreferrer noopener">
+                <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg>                  
+                    Twitter
+                </span>
+              </a>
+            </li>
+            <li style="--index: 3;">
+              <a class="botoncito__colorado" href="https://www.linkedin.com/in/srovettaterr%C3%B3n/" target="_blank" rel="noreferrer noopener">
+                <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+                    Linkedln
+                </span>
+              </a>
+            </li>
+            <li style="--index: 4;">
+              <a class="botoncito__colorado" href="#" target="_blank" rel="noreferrer noopener">
+                <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M579.8 267.7c56.5-56.5 56.5-148 0-204.5c-50-50-128.8-56.5-186.3-15.4l-1.6 1.1c-14.4 10.3-17.7 30.3-7.4 44.6s30.3 17.7 44.6 7.4l1.6-1.1c32.1-22.9 76-19.3 103.8 8.6c31.5 31.5 31.5 82.5 0 114L422.3 334.8c-31.5 31.5-82.5 31.5-114 0c-27.9-27.9-31.5-71.8-8.6-103.8l1.1-1.6c10.3-14.4 6.9-34.4-7.4-44.6s-34.4-6.9-44.6 7.4l-1.1 1.6C206.5 251.2 213 330 263 380c56.5 56.5 148 56.5 204.5 0L579.8 267.7zM60.2 244.3c-56.5 56.5-56.5 148 0 204.5c50 50 128.8 56.5 186.3 15.4l1.6-1.1c14.4-10.3 17.7-30.3 7.4-44.6s-30.3-17.7-44.6-7.4l-1.6 1.1c-32.1 22.9-76 19.3-103.8-8.6C74 372 74 321 105.5 289.5L217.7 177.2c31.5-31.5 82.5-31.5 114 0c27.9 27.9 31.5 71.8 8.6 103.9l-1.1 1.6c-10.3 14.4-6.9 34.4 7.4 44.6s34.4 6.9 44.6-7.4l1.1-1.6C433.5 260.8 427 182 377 132c-56.5-56.5-148-56.5-204.5 0L60.2 244.3z"/></svg>
+                    Horarios
+                </span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </main>
+    </div>
+</div>
+<div class="contenedorC">
+  <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/0ckdxukKfOWhuoOv3RoJAo?utm_source=generator" width="50%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+<img src="img/carrousell4.jpg" class="contenedor__imagen" alt="imagenCarrousel" id="imagen" width="200" height="300">
+</div>
+<div class="comentarios">
+  <form class="cajaComentarios">
+    <textarea rows="5" cols="90"></textarea><br><br>
+    <input class="enviar" type="submit" value="Enviar comentario">
+  </form>
+  <div class="comentarios__personas">
+  <h3>Comentarios</h3>
+  <p class="comentarios__personas2"><i class="fa-solid fa-user"></i>  NanoFan dice: No son mejoras son peoras<br></p>
+  <p class="comentarios__personas2"><i class="fa-solid fa-user"></i>  Alonso 33 dice: A ver si aston martin se pone a trabajar</p>
+  <p class="comentarios__personas2"><i class="fa-solid fa-user"></i>  Ham14 dice: Merch is awesome!</p>
+</div>
+</div>
+<footer class="footer__info">
+  <div class="footer__final">
+  <p>Twitter</p>
+  <p>Contacta con nosotros</p>
+  <p>Trabaja con nosotros</p>
+  <p>Condiciones</p>
+  </ul>
+  </div>
+</footer>
+
+
+
+
+
