@@ -8,19 +8,19 @@
 body{
     margin: 0rem; 
 }
+.logo{
+  width: 30%;
+}
 .header{   
 display: flex;
 align-items: center;
 }
-
 .elemento__lista {
     margin: 2rem;
     font-size: 1.3rem;
     cursor: pointer;
-    
 } 
 .lista{
-    
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
@@ -29,7 +29,6 @@ align-items: center;
     display: flex;
     margin-bottom: rem; 
     margin: 6rem;
-
     width: 90%;   
 }
 .card{
@@ -177,7 +176,6 @@ color: blue;
   padding: 3px;
 }
 .comentarios__personas{
-  
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -193,7 +191,6 @@ color: blue;
   margin: 1rem;
   font-family: f1font;
 }
-
 .contenedorC{
   display: flex;
   align-items: center;
@@ -202,26 +199,24 @@ color: blue;
 .footer__final{
   background-color: #FF4742;
   display: flex;
-  text-align: center;
   justify-content: space-evenly;
 }
-
-
 /* He puesto aqui el responsive porque me parecia mas comodo hacerlo al final */
-
 @media screen and (max-width: 780px) {
-
   body{
-      overflow-x: hidden;
+    overflow-x: hidden;
   }
   .lista{
+  margin-right: 13rem;
   align-items: center;
   flex-direction: column;
   }
-  .logo{
-    width: 20%;
+  .header{
+    margin: 3rem;
   }
   .contenedor{
+    width: 100%;
+    margin-left: 18rem;
     display: grid;
     grid-template-columns: repeat(1fr 1fr);   
   }
@@ -229,35 +224,34 @@ color: blue;
     width: 55%;
     margin: 0;
     margin-bottom: 1rem;
-
   }
   .card2{
    width: 50%;
- 
- 
   }
-  }
-  .logo {
-    width: 20rem;
-  }
-
   .contenedorC{
+    width: 100%;
+    margin-left: 18rem;
     display: grid;
     grid-template-columns: repeat(1fr 1fr);
-   
-    
   }
-
   .spoty__contenedor{
     width: 80%;
     margin-bottom: 1rem;
   }
-
   .contenedor__imagen{
     width: 50%;
   }
   .comentarios{
-
     display: grid;
     grid-template-columns: repeat(1fr 1fr);
   }
+  .logo{
+    width: 65%;
+  }
+  .footer__final{
+background-color: transparent;
+display: block;
+margin-left: 14rem;
+text-align: center;
+}
+}

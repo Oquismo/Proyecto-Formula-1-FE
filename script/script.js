@@ -58,6 +58,6 @@ function readMore() {
       }
 
   let intervalo = setInterval(pasaImagen,1000)
-  
+
   window.onload = manejarEventos;
 

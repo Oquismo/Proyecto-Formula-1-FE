@@ -4,7 +4,8 @@
 }
 body{
     margin: 0;
-  
+    background-image: url(../img/monza.avif) ;
+
 }
 .merchan__equipos{
     display: flex;
@@ -50,17 +51,14 @@ body{
     margin-bottom: 1rem;
 }
 .img__merch__elemento{
-    border: 2px solid #E32A30;
+    border: 2px solid #e32a3062;
     border-radius: 20px;
    
 }
 .lista__merch{
     display: flex;
     list-style: none;
-    justify-content: space-between;
-
-
-  
+    justify-content: space-between;  
 }
 .merchan__redes{
     color: rgb(255, 255, 255);
@@ -73,4 +71,29 @@ body{
 }
 .visitado{
     text-decoration: none;
+}
+
+@media screen and (max-width: 780px) {
+
+.imglogo__store{
+    width: 50%; 
+}
+.compra_equipos{
+    font-size: 2rem;
+}
+.carrousel__img{
+    width: 100%;
+}
+.carrousel__compra{
+width: 100%;
+margin: 3rem;
+
+}
+
+
+
+
+
+
+
 }
