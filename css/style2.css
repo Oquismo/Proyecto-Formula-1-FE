@@ -1,56 +1,18 @@
-
 @import url(https://unpkg.com/open-props/open-props.min.css);
-
-
 @import url(https://unpkg.com/open-props/normalize.min.css); 
 /* estos dos enlaces son ara añadir un modo oscuro */
-
 @font-face {
   font-family: f1font;
   src: url(../files/Fonts/Oswald-Regular.ttf);
 }
 body{
     margin: 0rem; 
-
-    
 }
 .header{   
 display: flex;
 align-items: center;
 }
-@media screen and (max-width: 780px) {
 
-body{
-    overflow-x: hidden;
-}
-
-
-
-.lista{
-align-items: center;
-flex-direction: column;
-}
-
-.contenedor{
-    display: block;
-    width: 10%;
-}
-
-.card2{
-  width: 1%;
-  margin: 3rem;
-  text-align: start;
-
-}
-
-}
-
-
-.logo {
-  width: 20rem;
-  
-  
-}
 .elemento__lista {
     margin: 2rem;
     font-size: 1.3rem;
@@ -62,22 +24,18 @@ flex-direction: column;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-   
- 
 }
 .contenedor{
     display: flex;
     margin-bottom: rem; 
     margin: 6rem;
 
-    width: 90%;
-    
+    width: 90%;   
 }
 .card{
     box-sizing: content-box;
     width: 100%;
-    margin: 3rem;
-    
+    margin: 3rem;  
 }
 .card_titulo{
     margin: 0.5rem;
@@ -88,12 +46,9 @@ flex-direction: column;
     margin: 1.5rem;
     padding: 1px
 }
-.card2{
-   
+.card2{ 
     width: 100%;
-
 }
-
 ul {
   align-items: center;
   padding: 0;
@@ -104,7 +59,6 @@ ul {
   transition: grid-template-columns 0.35s var(--ease-elastic-1);
   transition: grid-template-columns 0.35s var(--ease-elastic-1), -ms-grid-columns 0.35s var(--ease-elastic-1);
 }
-
 li {
   display: grid;
   justify-content: end;
@@ -123,7 +77,6 @@ li {
   backdrop-filter: blur(40px);
   transition: color 0.2s, background 0.2s;  
 }
-
 span {
   display: grid;
   align-items: center;
@@ -131,15 +84,12 @@ span {
   grid-template-columns: 16px 1fr;
   gap: 0.25rem;
 }
-
 a:focus-visible {
   outline-color: transparent;
 }
-
 ul:is(:focus-within, :hover) {
   --active: 1;
 }
-
 #mas
 {display: none;
 }
@@ -148,10 +98,8 @@ margin: 1rem;
 cursor: pointer; 
 color: blue;
 }
-
 #mas2
 {display: none;
-
 }
 .botonleerMas2 {
   margin: 1rem;
@@ -178,7 +126,6 @@ color: blue;
   touch-action: manipulation;
   vertical-align: middle;
 }
-
 .botonleerMas2:hover,
 .botonleerMas2:active {
   background-color: initial;
@@ -213,7 +160,6 @@ color: blue;
     touch-action: manipulation;
     vertical-align: middle;
   }
-  
   .botonleerMas:hover,
   .botonleerMas:active {
     background-color: initial;
@@ -223,7 +169,6 @@ color: blue;
   .botonleerMas:active {
     opacity:.5;
   }
-
   .comentarios{
   display: flex;
   justify-content: space-around;
@@ -253,14 +198,66 @@ color: blue;
   display: flex;
   align-items: center;
   justify-content: space-around;
-
-
 }
 .footer__final{
   background-color: #FF4742;
   display: flex;
   text-align: center;
   justify-content: space-evenly;
-
 }
 
+
+/* He puesto aqui el responsive porque me parecia mas comodo hacerlo al final */
+
+@media screen and (max-width: 780px) {
+
+  body{
+      overflow-x: hidden;
+  }
+  .lista{
+  align-items: center;
+  flex-direction: column;
+  }
+  .logo{
+    width: 20%;
+  }
+  .contenedor{
+    display: grid;
+    grid-template-columns: repeat(1fr 1fr);   
+  }
+  .card{
+    width: 55%;
+    margin: 0;
+    margin-bottom: 1rem;
+
+  }
+  .card2{
+   width: 50%;
+ 
+ 
+  }
+  }
+  .logo {
+    width: 20rem;
+  }
+
+  .contenedorC{
+    display: grid;
+    grid-template-columns: repeat(1fr 1fr);
+   
+    
+  }
+
+  .spoty__contenedor{
+    width: 80%;
+    margin-bottom: 1rem;
+  }
+
+  .contenedor__imagen{
+    width: 50%;
+  }
+  .comentarios{
+
+    display: grid;
+    grid-template-columns: repeat(1fr 1fr);
+  }
