@@ -89,9 +89,25 @@ width: 100%;
 margin: 3rem;
 
 }
+.contenedor__imagen{
+    width: 100%;
+}
+.img__merch__elemento{
+    width: 20%;
+}
+.carrousel__compra{
+    margin: 0rem;
+}
+
+.imagen__equipos{
+    margin: 0rem;
+}
+.merchan__redes{
+    margin: 0rem;
+    margin-top: 11rem;
 
 
-
+}
 
 
 
