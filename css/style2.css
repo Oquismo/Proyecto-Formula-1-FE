@@ -217,31 +217,35 @@ color: blue;
   flex-direction: column;
   }
   .header{
+    align-items: center;
+    display: flex;
     margin: 3rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
   }
   .contenedor{
     width: 100%;
-    margin-left: 18rem;
     display: grid;
     grid-template-columns: repeat(1fr 1fr);   
   }
   .card{
-    width: 55%;
+    width: 70%;
     margin: 0;
     margin-bottom: 1rem;
   }
   .card2{
-   width: 50%;
+   width: 60%;
   }
   .contenedorC{
     width: 100%;
-    margin-left: 18rem;
-    display: grid;
-    grid-template-columns: repeat(1fr 1fr);
+    display: flex;
+   
   }
   .spoty__contenedor{
     width: 80%;
     margin-bottom: 1rem;
+    margin: 2rem;
   }
   .contenedor__imagen{
     width: 50%;
@@ -254,7 +258,7 @@ color: blue;
     display: flex;
     flex-wrap: wrap;
   }
-  .footer__final{
+.footer__final{
 background-color: transparent;
 display: block;
 margin-left: 14rem;
