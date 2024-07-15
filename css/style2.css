@@ -201,6 +201,11 @@ color: blue;
   display: flex;
   justify-content: space-evenly;
 }
+.comentarios__personas2{
+  border: 5px solid black;
+  border-style: inset;
+  margin: 2rem;
+}
 /* He puesto aqui el responsive porque me parecia mas comodo hacerlo al final */
 @media screen and (max-width: 780px) {
   body{
@@ -241,12 +246,13 @@ color: blue;
   .contenedor__imagen{
     width: 50%;
   }
-  .comentarios{
-    display: grid;
-    grid-template-columns: repeat(1fr 1fr);
-  }
+
   .logo{
     width: 65%;
+  }
+  .comentarios{
+    display: flex;
+    flex-wrap: wrap;
   }
   .footer__final{
 background-color: transparent;
