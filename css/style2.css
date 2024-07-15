@@ -4,6 +4,7 @@
 @font-face {
   font-family: f1font;
   src: url(../files/Fonts/Oswald-Regular.ttf);
+  /* fuente basada en la F1 */
 }
 body{
     margin: 0rem; 
