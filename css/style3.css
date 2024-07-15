@@ -68,14 +68,15 @@ body{
     justify-content: space-around;
     font-family: f1fuente;
     
-}
-.visitado{
-    text-decoration: none;
+
 }
 a:visited{
     color: rgb(255, 255, 255);
 }
 
+/* modelo responsive simple para que se vea bien en los telefonos tablets y hasta una tv. 
+lo he podido probar en telefono y tablet fisicos pero no en television del que me ha tenido que bastar
+la opcion de google chrome para responsive */
 @media screen and (max-width: 780px) {
 
 .imglogo__store{

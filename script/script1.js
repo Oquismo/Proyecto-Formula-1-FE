@@ -27,4 +27,6 @@ let intervalo = setInterval(pasaImagen,3000)
 
 window.onload = manejarEventos;
 
+// Esta función es para crear el movimiento de las imagenes la he usado varias veces en el proyecto porque me parece 
+// una forma muy curiosa de añadir imagenes sin coste de espacio 
 

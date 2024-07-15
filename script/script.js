@@ -29,7 +29,8 @@ function readMore() {
       moreText.style.display = "inline";
     }
   }
-
+// Esta funcion la hice para crrar el desplegable de leer mas me he basado en tareas asincronas 
+// y contenido que hemos dado en clase para hacerlo
   let arrayImagenes = [ "img/carrousell2.jpg",  "img/carrousell3.jpg", "img/carrousell1.jpg",]
 
 
@@ -61,7 +62,8 @@ function readMore() {
 
   window.onload = manejarEventos;
 
-
+// Esta ultima es para crear el movimiento de las imagenes la he usado varias veces en el proyecto porque me parece 
+// una forma muy curiosa de añadir imagenes sin coste de espacio 
 
 
 
