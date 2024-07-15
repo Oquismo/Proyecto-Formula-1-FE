@@ -12,19 +12,23 @@
 </head>
 <body>
 <header>
+  <!-- Header con logo simple de F1 que cambia cuando se encuentra en responsive -->
     <div class="header">
     <img src="./img/logo hd.png" class="logo" alt="f1 logo">
 <ul class="lista">
     <li class="elemento__lista">Contacto</li>
     <li class="elemento__lista">Horarios</li>
-    <a href='./merchan.html'><li class="elemento__lista">Merchandaisin</li></a>
+    <a href='./merchan.html'><li class="elemento__lista">Merchandising</li></a>
+    <!-- La seccion merchandising lleva a la tercera pagina, la pagina de compras  -->
     <form action="0" method="get" class="elemento__lista">
         <input type="text" name="nombre" id="nom" class="header_input" placeholder="Buscar">
         <button type="submit" value="buscar" class="header_submit"> <i class="fa-solid fa-magnifying-glass"></i></button>
+        <!-- un buscador sin funcionalidad -->
     </form>
 </ul>
 </div>
 </header>
+<!-- un contenedor con dos card uno de noticias y otro de horario de GP los cuales me he inventado ambos contienen imagenes -->
 <div class="contenedor">
 <div class="card">
   <img src="./img/mediano.jpeg"  alt="f1" class="card_imagen">
@@ -91,7 +95,7 @@
             <li style="--index: 1;">
               <a class="botoncito__colorado" href="#" target="_blank" rel="noreferrer noopener">
                 <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"> 
-                    <!-- retocar -->
+          <!-- para el estilo de los botones me he pasado en la gama de colores de la F1 la cual dejare posteriormente en la memoria -->
         <path stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
       </svg>
       Redes</span>
@@ -130,6 +134,8 @@
   <iframe class='spoty__contenedor' style="border-radius:12px" src="https://open.spotify.com/embed/playlist/0ckdxukKfOWhuoOv3RoJAo?utm_source=generator" width="50%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 <img src="img/carrousell4.jpg" class="contenedor__imagen" alt="imagenCarrousel" id="imagen" width="200" height="300">
 </div>
+<!-- me parecio muy curioso añadir una zona de comentarios la cual no tiene funcionalidad alguna
+ por lo que me he inventado los comentarios de los "fans" -->
 <div class="comentarios">
   <form class="cajaComentarios">
     <textarea rows="5" cols="90"></textarea><br><br>
@@ -145,6 +151,7 @@
 <div class="footer__info"></div>
 <footer class="footer__info">
   <div class="footer__final">
+    <!-- footer final simple que se transoforma en modo responsive -->
   <p>Twitter</p>
   <p>Contacta con nosotros</p>
   <p>Trabaja con nosotros</p>
