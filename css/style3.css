@@ -1,3 +1,14 @@
+/*/----------------------------------------------------- 
+ style3.css 
+-Importar fuente
+-logos equipos
+-Estilo banner 1
+-Estilo banner 2 
+-Responsive
+------------------------------------------------------------------ */ 
+
+
+
 @font-face {
     font-family: f1fuente;
     src: url(../files/Fonts/Oswald-Regular.ttf);

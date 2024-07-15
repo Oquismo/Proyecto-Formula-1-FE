@@ -1,3 +1,11 @@
+<!-- Descripcion: Este archivo HTML contiene las pagina principal del sitio web 
+Estructura general:
+- Header
+- Cards de noticias y horarios 
+- Plugin de spotify y carrousel de imagenes
+- Zona de comentarios
+- Pie de pagina-->
+
 <!doctype html>
 <html lang="es">
 <head> 
@@ -12,6 +20,7 @@
 </head>
 <body>
 <header>
+  <!-- Aqui empieza la seccion header -->
   <!-- Header con logo simple de F1 que cambia cuando se encuentra en responsive -->
     <div class="header">
     <img src="./img/logo hd.png" class="logo" alt="f1 logo">
@@ -27,7 +36,10 @@
     </form>
 </ul>
 </div>
-</header>
+</header> 
+<!-- Aqui termina la seccion header -->
+
+
 <!-- un contenedor con dos card uno de noticias y otro de horario de GP los cuales me he inventado ambos contienen imagenes -->
 <div class="contenedor">
 <div class="card">
@@ -129,11 +141,17 @@
         </nav>
       </main>
     </div>
+ <!-- Aqui termina el contenedor de las cards -->
 </div>
+
+<!-- Aqui abajo empieza un contenedor que contiene las secciones de un codigo incrustado de spotify con una lista de F1 y un carrouselk automatico de imagenes -->
 <div class="contenedorC">
   <iframe class='spoty__contenedor' style="border-radius:12px" src="https://open.spotify.com/embed/playlist/0ckdxukKfOWhuoOv3RoJAo?utm_source=generator" width="50%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 <img src="img/carrousell4.jpg" class="contenedor__imagen" alt="imagenCarrousel" id="imagen" width="200" height="300">
 </div>
+ <!-- Aqui termina el contenedor-->
+
+
 <!-- me parecio muy curioso añadir una zona de comentarios la cual no tiene funcionalidad alguna
  por lo que me he inventado los comentarios de los "fans" -->
 <div class="comentarios">
@@ -147,7 +165,9 @@
   <p class="comentarios__personas2"><i class="fa-solid fa-user"></i>  Alonso 33 dice: A ver si aston martin se pone a trabajar <br> Hace 2 dias</p>
   <p class="comentarios__personas2"><i class="fa-solid fa-user"></i>  Ham14 dice: Merch is awesome! <br>Hace 8 dias</p>
 </div>
+<!-- Aqui termina el contenedor de comentarios -->
 </div>
+
 <div class="footer__info"></div>
 <footer class="footer__info">
   <div class="footer__final">
@@ -160,5 +180,7 @@
   </div>
 </div>
 </footer>
+<!-- Fin de footer -->
 </body>
 </html>
+<!-- Fin de pagina -->

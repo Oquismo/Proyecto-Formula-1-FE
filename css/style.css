@@ -1,3 +1,14 @@
+/*/----------------------------------------------------- 
+ style.css 
+-Importar fuente
+-estilo fuente * para que se le aplique a todo ya que se trata de un documento pequeño
+-Estilo del anillo con hover
+-Animaciones
+-Cajas login 
+-Boton entrar 
+------------------------------------------------------------------ */ 
+
+
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
 * {
   margin: 0;

@@ -1,3 +1,16 @@
+/*/----------------------------------------------------- 
+ style2.css 
+-Importar modo oscuro 
+-Imporar fuentes 
+-Header
+-Card
+-Botones de los card 
+-Comentarios 
+-Responsive
+------------------------------------------------------------------ */ 
+
+
+
 @import url(https://unpkg.com/open-props/open-props.min.css);
 @import url(https://unpkg.com/open-props/normalize.min.css); 
 /* estos dos enlaces son ara añadir un modo oscuro */

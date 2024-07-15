@@ -1,3 +1,10 @@
+/*/----------------------------------------------------- 
+script.js
+Funciones del documento:
+-Darle funcionalidad al carrousell de imagenes de la store
+------------------------------------------------------------------ */ 
+
+
 let arrayImagenes = ['img/hamcompra.avif', 'img/merchultimo.webp', 'img/alonsostore.webp']
 
 

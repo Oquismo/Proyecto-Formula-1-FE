@@ -1,3 +1,13 @@
+/*/----------------------------------------------------- 
+script.js
+Funciones del documento:
+-Darle uso al boton leer mas
+-Darle funcionalidad al carrousell de imagenes
+------------------------------------------------------------------ */ 
+
+
+
+// Este esel boton leer mas de la primera card 
 function readMore() {
     var dots = document.getElementById("puntos");
     var moreText = document.getElementById("mas");
@@ -13,7 +23,7 @@ function readMore() {
       moreText.style.display = "inline";
     }
   }
-
+// Este es el boton leer mas de la segunda card
   function readMore2() {
     var dots = document.getElementById("puntos2");
     var moreText = document.getElementById("mas2");
