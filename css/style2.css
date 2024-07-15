@@ -253,6 +253,7 @@ color: blue;
 
   .logo{
     width: 65%;
+    margin-left: 4rem;
   }
   .comentarios{
     display: flex;
