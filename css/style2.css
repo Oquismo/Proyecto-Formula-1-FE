@@ -43,12 +43,11 @@ align-items: center;
 .contenedor{
     color: rgb(255, 0, 0);
     display: flex;
-    margin-bottom: rem; 
     margin: 6rem;
     width: 90%;   
 }
 .card_imagen{
-  box-shadow: 10px 5px 5px black;
+  box-shadow: 10px black;
 }
 .card{
     box-sizing: content-box;
