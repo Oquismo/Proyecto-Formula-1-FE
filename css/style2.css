@@ -47,6 +47,9 @@ align-items: center;
     margin: 6rem;
     width: 90%;   
 }
+.card_imagen{
+  box-shadow: 10px 5px 5px black;
+}
 .card{
     box-sizing: content-box;
     width: 100%;
