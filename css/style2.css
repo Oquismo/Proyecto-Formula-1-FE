@@ -21,15 +21,19 @@
 }
 body{
     margin: 0rem; 
+    background-color: #212529;
 }
 .logo{
   width: 30%;
 }
 .header{   
+color: white;
 display: flex;
 align-items: center;
 }
 .elemento__lista {
+  background-color: #212529;
+  
     margin: 2rem;
     font-size: 1.3rem;
     cursor: pointer;
@@ -39,7 +43,17 @@ align-items: center;
     align-items: flex-start;
     justify-content: space-between;
 }
+input{
+  background-color: #212529;
+  border: 2px solid white;
+}
+.header__submit{
+  background-color: #ffffff;
+  color: #212529;
+}
+
 .contenedor{
+  color: white;
     display: flex;
     margin-bottom: rem; 
     margin: 6rem;
@@ -182,6 +196,7 @@ color: blue;
     opacity:.5;
   }
   .comentarios{
+  color: white;
   display: flex;
   justify-content: space-around;
   flex-direction: column;
@@ -189,6 +204,7 @@ color: blue;
   padding: 3px;
 }
 .comentarios__personas{
+  
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -197,7 +213,14 @@ color: blue;
   margin: 1rem;
   font-family: f1font;
 }
+textarea{
+  color: #212529;
+  background-color: #212529;
+  border: 2px solid white;
+}
 .cajaComentarios{
+  color: #212529;
+  background-color: #212529;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -223,6 +246,7 @@ color: blue;
 @media screen and (max-width: 780px) {
   body{
     overflow-x: hidden;
+    background-color: #212529;
   }
   .lista{
   margin-right: 13rem;
@@ -251,6 +275,7 @@ color: blue;
    width: 60%;
   }
   .contenedorC{
+    
     width: 100%;
     display: flex;
    
@@ -269,6 +294,7 @@ color: blue;
     margin-left: 6rem;
   }
   .comentarios{
+   
     display: flex;
     flex-wrap: wrap;
   }
