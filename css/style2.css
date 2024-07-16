@@ -26,6 +26,7 @@ body{
   width: 30%;
 }
 .header{   
+
 display: flex;
 align-items: center;
 }
@@ -40,6 +41,7 @@ align-items: center;
     justify-content: space-between;
 }
 .contenedor{
+    color: rgb(255, 0, 0);
     display: flex;
     margin-bottom: rem; 
     margin: 6rem;
@@ -78,6 +80,7 @@ li {
   z-index: calc(var(--count) - var(--index));
 }
 .botoncito__colorado {
+  color: black;
   background: hsl(0 0% 60% / 0.18);
   display: inline-block;
   padding: var(--size-2) var(--size-4);
@@ -88,10 +91,11 @@ li {
   font-weight: var(--font-weight-0);
   -webkit-backdrop-filter: blur(40px);
   backdrop-filter: blur(40px);
-  transition: color 0.2s, background 0.2s;  
+
 }
 span {
   display: grid;
+  color: rgb(255, 0, 0);
   align-items: center;
   grid-auto-flow: column;
   grid-template-columns: 16px 1fr;
