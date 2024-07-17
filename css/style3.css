@@ -8,7 +8,9 @@
 ------------------------------------------------------------------ */ 
 
 
-
+@import "modo-oscuro.css";
+@import url(https://unpkg.com/open-props/open-props.min.css);
+@import url(https://unpkg.com/open-props/normalize.min.css); 
 @font-face {
     font-family: f1fuente;
     src: url(../files/Fonts/Oswald-Regular.ttf);

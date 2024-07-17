@@ -32,6 +32,19 @@ function manejarEventos(){
 
 let intervalo = setInterval(pasaImagen,3000)
 
+  
+const switchButton = document.getElementById('cambio');
+
+switchButton.addEventListener('click', () => {
+    document.body.classList.toggle('oscuro');
+    switchButton.classList.toggle('activar');
+});
+
+
+
+
+
+
 window.onload = manejarEventos;
 
 // Esta función es para crear el movimiento de las imagenes la he usado varias veces en el proyecto porque me parece 
