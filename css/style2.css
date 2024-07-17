@@ -8,16 +8,19 @@
 -Comentarios 
 -Responsive
 ------------------------------------------------------------------ */ 
+
+
+@import "modo-oscuro.css";
 @import url(https://unpkg.com/open-props/open-props.min.css);
 @import url(https://unpkg.com/open-props/normalize.min.css); 
-/* estos dos enlaces son ara añadir un modo oscuro (segun el estilo del navegador) */
+/* estos dos enlaces son ara añadir un modo oscuro */
 @font-face {
   font-family: f1font;
   src: url(../files/Fonts/Oswald-Regular.ttf);
   /* fuente basada en la F1 */
 }
 body{
-    margin: 0rem; 
+    margin: 0rem;
 }
 .logo{
   width: 30%;
@@ -38,9 +41,8 @@ align-items: center;
     justify-content: space-between;
 }
 .contenedor{
-    color: rgb(255, 0, 0);
     display: flex;
-    margin: 6rem;
+    margin: 3rem;
     width: 90%;   
 }
 .card_imagen{
@@ -79,13 +81,12 @@ li {
   z-index: calc(var(--count) - var(--index));
 }
 .botoncito__colorado {
-  color: black;
   background: hsl(0 0% 60% / 0.18);
   display: inline-block;
   padding: var(--size-2) var(--size-4);
   border-radius: var(--radius-5);
   margin: 0;
-  color: var(--gray-0);
+  color: var(--white-0);
   font-size: var(--font-size-1);
   font-weight: var(--font-weight-0);
   -webkit-backdrop-filter: blur(40px);
@@ -94,7 +95,6 @@ li {
 }
 span {
   display: grid;
-  color: rgb(255, 0, 0);
   align-items: center;
   grid-auto-flow: column;
   grid-template-columns: 16px 1fr;
@@ -112,7 +112,7 @@ ul:is(:focus-within, :hover) {
 .botonleerMas {
 margin: 1rem;
 cursor: pointer; 
-color: blue;
+
 }
 #mas2
 {display: none;
@@ -225,17 +225,18 @@ color: blue;
 /* He puesto aqui el responsive porque me parecia mas comodo hacerlo al final */
 @media screen and (max-width: 780px) {
   body{
-    overflow-x: hidden;
+    width:150%;
+  
   }
   .lista{
-  margin-right: 13rem;
+  
   align-items: center;
   flex-direction: column;
   }
   .header{
     align-items: center;
     display: flex;
-    margin: 3rem;
+  
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -243,7 +244,7 @@ color: blue;
   .contenedor{
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(1fr 1fr);   
+    grid-template-columns: repeat(1 1fr);   
   }
   .card{
     width: 70%;
@@ -256,12 +257,13 @@ color: blue;
   .contenedorC{
     width: 100%;
     display: flex;
+    flex-direction: column;
    
   }
   .spoty__contenedor{
     width: 80%;
     margin-bottom: 1rem;
-    margin: 2rem;
+    
   }
   .contenedor__imagen{
     width: 50%;
@@ -269,7 +271,6 @@ color: blue;
 
   .logo{
     width: 65%;
-    margin-left: 6rem;
   }
   .comentarios{
     display: flex;
@@ -277,8 +278,7 @@ color: blue;
   }
 .footer__final{
 background-color: transparent;
-display: block;
-margin-left: 14rem;
+
 text-align: center;
 }
 }

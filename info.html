@@ -31,11 +31,17 @@ Estructura general:
     <!-- La seccion merchandising lleva a la tercera pagina, la pagina de compras  -->
     <form action="0" method="get" class="elemento__lista">
         <input type="text" name="nombre" id="nom" class="header_input" placeholder="Buscar">
-        <button type="submit" value="buscar" class="header_submit"> <i class="fa-solid fa-magnifying-glass"></i></button>
         <!-- un buscador sin funcionalidad -->
-    </form>
+    </form> 
+
 </ul>
 </div>
+<!-- switch para modo oscuro  -->
+<button class="cambio__Oscuro" id="cambio">
+  <span><i class="fas fa-sun"></i></span>
+  <span><i class="fas fa-moon"></i></span> 
+  </button>
+<!-- switch para modo oscuro  -->
 </header> 
 <!-- Aqui termina la seccion header -->
 <!-- un contenedor con dos card uno de noticias y otro de horario de GP los cuales me he inventado ambos contienen imagenes -->
@@ -153,7 +159,7 @@ Estructura general:
  por lo que me he inventado los comentarios de los "fans" -->
 <div class="comentarios">
   <form class="cajaComentarios">
-    <textarea rows="5" cols="90"></textarea><br><br>
+    <textarea rows="5" cols="50"></textarea><br><br>
     <input class="enviar" type="submit" value="Enviar comentario">
   </form>
   <div class="comentarios__personas">

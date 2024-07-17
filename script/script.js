@@ -69,6 +69,13 @@ function readMore() {
       }
 
   let intervalo = setInterval(pasaImagen,1000)
+  
+  const switchButton = document.getElementById('cambio');
+ 
+  switchButton.addEventListener('click', () => {
+      document.body.classList.toggle('oscuro');
+      switchButton.classList.toggle('activar');
+  });
 
   window.onload = manejarEventos;
 

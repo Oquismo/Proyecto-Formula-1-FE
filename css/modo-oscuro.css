@@ -1,0 +1,45 @@
+body.oscuro {
+background:  #000000d8;
+color: rgb(255, 255, 255); 
+}
+
+.cambio__Oscuro{
+    background: #000000;
+    display:flex;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 2rem;
+    align-items: center;
+    justify-content: space-between;
+}
+.cambio__Oscuro span{
+    width:30px;
+    height:20px;
+    line-height:19px;
+    display:block;
+    color:#ffffff;
+    background: none;
+}
+.cambio__Oscuro::after{
+    display:block;
+    background: #000000de;
+    width: 1.5rem;
+    height: 1.5rem;
+    position: absolute;
+    top:0;
+    left:0;
+    right:unset;
+    border-radius: 1rem;
+    transition: all .5s ease;
+    content: "";
+}
+.cambio__Oscuro.activar{
+  background: #0a0909;
+}
+.cambio__Oscuro.activar::after{
+
+  left:unset;
+  right:0;
+}
