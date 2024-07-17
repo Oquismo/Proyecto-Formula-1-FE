@@ -8,12 +8,9 @@
 -Comentarios 
 -Responsive
 ------------------------------------------------------------------ */ 
-
-
-
 @import url(https://unpkg.com/open-props/open-props.min.css);
 @import url(https://unpkg.com/open-props/normalize.min.css); 
-/* estos dos enlaces son ara añadir un modo oscuro */
+/* estos dos enlaces son ara añadir un modo oscuro (segun el estilo del navegador) */
 @font-face {
   font-family: f1font;
   src: url(../files/Fonts/Oswald-Regular.ttf);
