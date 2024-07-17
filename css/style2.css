@@ -21,6 +21,7 @@
 }
 body{
     margin: 0rem;
+    overflow-x: hidden;
 }
 html{
   overflow-x: hidden;
@@ -229,8 +230,12 @@ cursor: pointer;
 @media screen and (max-width: 780px) {
   body{
     width:150%;
-  
+    overflow-x: hidden;
   }
+
+html{
+  overflow-x: hidden;
+}
   .lista{
   
   align-items: center;
