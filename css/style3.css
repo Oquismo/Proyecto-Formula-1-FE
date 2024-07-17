@@ -80,8 +80,9 @@ body{
     display: flex;
     justify-content: space-around;
     font-family: f1fuente;
-    
-
+}
+.instagram{
+    cursor: pointer;
 }
 a:visited{
     color: rgb(255, 255, 255);
