@@ -30,7 +30,6 @@ html{
   width: 30%;
 }
 .header{   
-
 display: flex;
 align-items: center;
 }
@@ -50,7 +49,7 @@ align-items: center;
     width: 90%;   
 }
 .card_imagen{
-  box-shadow: 10px black;
+  box-shadow: 10px 5px 5px black;
 }
 .card{
     box-sizing: content-box;
@@ -179,16 +178,16 @@ cursor: pointer;
     touch-action: manipulation;
     vertical-align: middle;
   }
-  .botonleerMas:hover,
-  .botonleerMas:active {
+.botonleerMas:hover,
+.botonleerMas:active {
     background-color: initial;
     background-position: 0 0;
     color: #FF4742;
   }
-  .botonleerMas:active {
+.botonleerMas:active {
     opacity:.5;
   }
-  .comentarios{
+.comentarios{
   display: flex;
   justify-content: space-around;
   flex-direction: column;
@@ -216,6 +215,12 @@ cursor: pointer;
   align-items: center;
   justify-content: space-around;
 }
+.contenedor__imagen{
+  box-shadow: 10px 5px 5px black;
+}
+.spoty__contenedor{
+  box-shadow: 10px 5px 5px black;
+}
 .footer__final{
   background-color: #FF4742;
   display: flex;
@@ -236,23 +241,23 @@ cursor: pointer;
 html{
   overflow-x: hidden;
 }
-  .lista{
-  
+.lista{
   align-items: center;
   flex-direction: column;
   }
-  .header{
-    align-items: center;
-    display: flex;
+.header{
+
+  align-items: center;
+  display: flex;
   
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
   }
   .contenedor{
-    width: 90%;
-    display: grid;
-    grid-template-columns: repeat(1 1fr);   
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(1 1fr);   
   }
   .card{
     width: 70%;
@@ -262,31 +267,32 @@ html{
   .card2{
    width: 60%;
   }
-  .contenedorC{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
+.contenedorC{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
    
   }
-  .spoty__contenedor{
-    width: 80%;
-    margin-bottom: 1rem;
+.spoty__contenedor{
+  box-shadow: 10px 5px 5px black;
+  width: 80%;
+  margin-bottom: 1rem;
     
-  }
+}
   .contenedor__imagen{
-    width: 50%;
-  }
+  box-shadow: 10px 5px 5px black;
+  width: 50%;
+}
 
-  .logo{
+.logo{
     width: 65%;
-  }
-  .comentarios{
-    display: flex;
-    flex-wrap: wrap;
-  }
+}
+.comentarios{
+ display: flex;
+ flex-wrap: wrap;
+}
 .footer__final{
-background-color: transparent;
-
-text-align: center;
+  background-color: transparent;
+  text-align: center;
 }
 }

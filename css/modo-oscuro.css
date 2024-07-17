@@ -1,9 +1,10 @@
 body.oscuro {
+transition: background-color 1.3s ease-in;
 background:  #000000d8;
 color: rgb(255, 255, 255); 
 }
-
 .cambio__Oscuro{
+    background:  #000000d8;
     background: #000000;
     display:flex;
     position: relative;
@@ -39,7 +40,6 @@ color: rgb(255, 255, 255);
   background: #0a0909;
 }
 .cambio__Oscuro.activar::after{
-
   left:unset;
   right:0;
 }
