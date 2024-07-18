@@ -245,11 +245,9 @@ html{
   flex-direction: column;
   }
 .header{
-
   align-items: center;
   display: flex;
-  
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-evenly;
   }
@@ -293,5 +291,8 @@ html{
 .footer__final{
   background-color: transparent;
   text-align: center;
+}
+.cambio__Oscuro{
+  display: flex;
 }
 }
