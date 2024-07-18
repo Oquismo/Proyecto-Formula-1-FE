@@ -1,0 +1,133 @@
+/*/----------------------------------------------------- 
+ style3.css 
+-Importar fuente
+-logos equipos
+-Estilo banner 1
+-Estilo banner 2 
+-Responsive
+------------------------------------------------------------------ */ 
+
+
+@import "modo-oscuro.css";
+@import url(https://unpkg.com/open-props/open-props.min.css);
+@import url(https://unpkg.com/open-props/normalize.min.css); 
+@font-face {
+    font-family: f1fuente;
+    src: url(../files/Fonts/Oswald-Regular.ttf);
+}
+body{
+    margin: 0;
+    background-image: url(../img/monza.avif) ;
+
+}
+.merchan__equipos{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 3rem;
+}
+.imagen__equipos{
+    width: 3rem;
+    cursor: pointer;
+}
+.compra_equipos{
+    text-align: center;
+    font-family: f1fuente;
+    font-size: 50px
+}
+.carrousel__img{
+    width: 80%;
+}
+.carrousel__compra{
+    justify-content: center;
+    display: flex;
+    margin: 4rem;
+}
+.imglogo__store{
+    width: 20%;
+}
+.compra__contenedor{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.contenedor__alo{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.contenedor__merch{
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    justify-content: space-around;
+    margin-bottom: 1rem;
+}
+.img__merch__elemento{
+    border: 2px solid #e32a3062;
+    border-radius: 20px;
+   
+}
+.lista__merch{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;  
+}
+.merchan__redes{
+    color: rgb(255, 255, 255);
+    background-image: url(../img/banner.jpg);
+    background-position: 55% 80%;
+    display: flex;
+    justify-content: space-around;
+    font-family: f1fuente;
+}
+.instagram{
+    cursor: pointer;
+}
+a:visited{
+    color: rgb(255, 255, 255);
+}
+
+/* modelo responsive simple para que se vea bien en los telefonos tablets y hasta una tv. 
+lo he podido probar en telefono y tablet fisicos pero no en television del que me ha tenido que bastar
+la opcion de google chrome para responsive */
+@media screen and (max-width: 780px) {
+
+.imglogo__store{
+    width: 50%; 
+}
+.compra_equipos{
+    font-size: 2rem;
+}
+.carrousel__img{
+    width: 100%;
+}
+.carrousel__compra{
+width: 100%;
+margin: 3rem;
+
+}
+.contenedor__imagen{
+    width: 100%;
+}
+.img__merch__elemento{
+    width: 20%;
+}
+.carrousel__compra{
+    margin: 0rem;
+}
+
+.imagen__equipos{
+    margin: 0rem;
+}
+.merchan__redes{
+    margin: 0rem;
+    margin-top: 11rem;
+
+
+}
+
+
+
+
+}

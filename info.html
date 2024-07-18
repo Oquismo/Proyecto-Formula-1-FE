@@ -1,11 +1,11 @@
 <!-- Descripcion: Este archivo HTML contiene las pagina principal del sitio web 
 Estructura general:
 - Header
+- Slider modo oscuro 
 - Cards de noticias y horarios 
 - Plugin de spotify y carrousel de imagenes
 - Zona de comentarios
 - Pie de pagina-->
-
 <!doctype html>
 <html lang="es">
 <head> 
@@ -28,24 +28,24 @@ Estructura general:
     <li class="elemento__lista">Contacto</li>
     <li class="elemento__lista">Horarios</li>
     <a href='./merchan.html' target="_blank"><li class="elemento__lista">Merchandising</li></a>
+</ul>
     <!-- La seccion merchandising lleva a la tercera pagina, la pagina de compras  -->
+    <!-- Un buscador sin funcionalidad -->
     <form action="0" method="get" class="elemento__lista">
         <input type="text" name="nombre" id="nom" class="header_input" placeholder="Buscar">
         <!-- un buscador sin funcionalidad -->
     </form> 
-
-</ul>
-</div>
-<!-- switch para modo oscuro  -->
+    <!-- switch para modo oscuro  -->
 <button class="cambio__Oscuro" id="cambio">
   <span><i class="fas fa-sun"></i></span>
   <span><i class="fas fa-moon"></i></span> 
   </button>
 <!-- switch para modo oscuro  -->
+
 </header> 
 <!-- Aqui termina la seccion header -->
 <!-- un contenedor con dos card uno de noticias y otro de horario de GP los cuales me he inventado ambos contienen imagenes -->
-<div class="contenedor">
+<section class="contenedor">
 <div class="card">
   <img src="./img/mediano.jpeg"  alt="f1" class="card_imagen">
     <h3>Ultima Hora</h3>
@@ -143,21 +143,21 @@ Estructura general:
           </ul>
         </nav>
       </main>
-    </div>
+    </section> 
  <!-- Aqui termina el contenedor de las cards -->
 </div>
 
 <!-- Aqui abajo empieza un contenedor que contiene las secciones de un codigo incrustado de spotify con una lista de F1 y un carrousell automatico de imagenes -->
-<div class="contenedorC">
+<article class="contenedorC">
   <iframe class='spoty__contenedor' style="border-radius:12px" src="https://open.spotify.com/embed/playlist/0ckdxukKfOWhuoOv3RoJAo?utm_source=generator" width="50%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 <img src="img/carrousell4.jpg" class="contenedor__imagen" alt="imagenCarrousel" id="imagen" width="200" height="300">
-</div>
+</article>
  <!-- Aqui termina el contenedor-->
 
 
 <!-- me parecio muy curioso añadir una zona de comentarios la cual no tiene funcionalidad alguna
  por lo que me he inventado los comentarios de los "fans" -->
-<div class="comentarios">
+<section class="comentarios">
   <form class="cajaComentarios">
     <textarea rows="5" cols="50"></textarea><br><br>
     <input class="enviar" type="submit" value="Enviar comentario">
@@ -168,20 +168,20 @@ Estructura general:
   <p class="comentarios__personas2"><i class="fa-solid fa-user"></i>  Alonso 33 dice: A ver si aston martin se pone a trabajar <br> Hace 2 dias</p>
   <p class="comentarios__personas2"><i class="fa-solid fa-user"></i>  Ham14 dice: Merch is awesome! <br>Hace 8 dias</p>
 </div>
+</body>
 <!-- Aqui termina el contenedor de comentarios -->
-</div>
-
-<div class="footer__info"></div>
+</section>
+<!-- footer final simple que se transoforma en modo responsive -->
 <footer class="footer__info">
+<div class="footer__info">
   <div class="footer__final">
-    <!-- footer final simple que se transoforma en modo responsive -->
   <p>Twitter</p>
   <p>Contacta con nosotros</p>
   <p>Trabaja con nosotros</p>
   <p>Condiciones</p>
   </div>
+</div>
 </footer>
 <!-- Fin de footer -->
-</body>
 </html>
 <!-- Fin de pagina -->

@@ -20,17 +20,20 @@
 <script src='./script/script1.js' defer></script>
 </head>
 <body>
+<header class="compra__contenedor">
 <div class="compra__contenedor">
 <img src="./img/logo-hd.png" class="imglogo__store" alt="logo">
 <h1 class="compra_equipos">Compra por equipos</h1>
-</div>
 <!-- switch para modo oscuro  -->
 <button class="cambio__Oscuro" id="cambio">
     <span><i class="fas fa-sun"></i></span>
     <span><i class="fas fa-moon"></i></span> 
     </button>
-  <!-- switch para modo oscuro  -->
-<div class="merchan__equipos">
+ <!-- switch para modo oscuro  -->
+</div>
+</header>
+
+<section class="merchan__equipos">
 <!-- Aqui me base en como está hecho en la web oficial de F1 poniendo los logos de los equipos (sacados de ahí) y linkeando a las paginas oficiales -->
 <a href='https://f1store2.formula1.com/es/alpine/t-21438535+z-9679180-2913012224' target="_blank"><img class="imagen__equipos" src="./img/alpjne.svg" alt="alpine"></a>
 <a href='https://f1store2.formula1.com/es/aston-martin/t-32659625+z-9794350-777885981' target="_blank"><img class="imagen__equipos" src="./img/astonmartin.svg" alt="am"></a>
@@ -39,16 +42,15 @@
 <a href='https://f1store2.formula1.com/es/red-bull/t-98080827+z-867377-2773625181' target="_blank"><img class="imagen__equipos" src="./img/redbull.svg" alt="rb"></a>
 <a href='https://f1store2.formula1.com/es/scuderia-ferrari/t-76758670+z-71034-984427031' target="_blank"><img class="imagen__equipos" src="./img/scuderiaferrari.svg" alt="ferrari"></a>
 <a href='https://f1store2.formula1.com/es/rb/t-10421088+z-9325350-950311027' target="_blank"><img class="imagen__equipos" src="./img/visachash.svg" alt="tororroso"></a>
-</div>
-<div class="carrousel__compra">
+</section>
+<article class="carrousel__compra">
     <!-- Esto tambien esta sacado de la web es un archivo webb y se va moviendo solo -->
     <img src="./img/carrouselcompra 1.webp" alt="corrousell" class="carrousel__img">
-</div>
-<div class="contenedor__alo">
+</article>
+<article class="contenedor__alo">
 <!-- Esto en la web oficial no se mueve solo, a mi me parecio mejor que se moviese solo porque queda muy bien con el de arriba -->
 <img src="./img/alonsostore.webp" class="contenedor__imagen" alt="imagenCarrousel" id="imagen" >
-  
-</div>
+</article>
 
 <div class="contenedor__merch">
     <!-- Esto no sale en la web pero lo puse en forma de 'tienda' -->
@@ -59,19 +61,21 @@
     <img src="./img/alonsomech1.avif" alt="" class="img__merch__elemento">
     
 </div>
+</body>
 <footer class="merchan__redes">
 <!-- un footer normal con una opcion de volver a la pagina principal y un acceso directo a mi perfil de github -->
     <div class="contenedor__merch__footer">
-        <h2 class="titulomerch">Siguenos en nuestras redes</h2>
-        <div class="contenedor__redes">
-        <ul class="lista__merch">
+    <h2 class="titulomerch">Siguenos en nuestras redes</h2>
+    <div class="contenedor__redes">
+    <ul class="lista__merch">
             <a href="https://x.com/alo_oficial"><i class="fa-brands fa-x-twitter"></i></a>
             <a href="https://github.com/Oquismo"><i class="fa-brands fa-github"></i></a>
             <a href="https://www.instagram.com/fernandoalo_oficial/?hl=es" class='instagram'><i class="fa-brands fa-instagram"></i></a>
             <a class='visitado'href="./info.html"><i class="fa-solid fa-indent"></i></a>
-        </div>
-        </ul>
-    </div>
+</div>
+</ul>
+</div>
 </footer>
-</body>
+<!-- Fin de footer -->
 </html>
+<!-- Fin de pagina -->
